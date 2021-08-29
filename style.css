@@ -9,7 +9,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(to right, silver, aqua);
+  background: linear-gradient(to right, silver, darkgrey);
 }
 
 .calc-grid {
@@ -26,11 +26,19 @@ body {
   font-size: 2rem;
   border: 1px solid white;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.calc-grid > button.span-two-row {
+  background-color: rgba(255, 255, 0, 0.6);
 }
 
 .calc-grid > button:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.calc-grid > button.span-two-row:hover {
+  background-color: rgba(255, 255, 0, 0.3);
 }
 
 .span-two-col {
