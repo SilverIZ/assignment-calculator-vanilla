@@ -29,7 +29,7 @@ numberElement.forEach(number =>{
 
 operationElement.forEach(operation =>{
     operation.addEventListener('click', (e)=>{
-        if (!curNumber) result
+        if(!curNumber) return
         haveDot = false
         const operationName = e.target.innerText
         if (prevNumber && curNumber && lastOperation){
