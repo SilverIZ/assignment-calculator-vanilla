@@ -73,7 +73,10 @@ equalElement.addEventListener('click', (e)=> {
     if(!prevNumber || !curNumber) return
     haveDot = false
     mathOperation()
-    clearVar()
+    const equal = e.target.innerText
+    clearVar(equal)
+    // prevNumber += '' + result
+    prevElement.innerText = prevNumber
     curElement.innerText = result
     curNumber = result
     prevNumber = ''
@@ -89,6 +92,11 @@ acElement.addEventListener('click', (e)=>{
 })
 
 ceElement.addEventListener('click', (e)=>{
-    curElement.innerText =''
-    curNumber = ''
+    let tes = curElement.innerText
+    let tes2 = prevElement.innerText
+    curElement.innerText = tes.slice(0,-1)
+    curNumber = tes.slice(0,-1)
+    // prevElement.innerText = tes2.slice(0,-1)
+    // prevNumber = tes2.slice(0,-1)
+
 })
